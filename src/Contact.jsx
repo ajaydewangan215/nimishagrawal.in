@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import axios from 'axios';
 // import { Link } from "react-router-dom";
 
 const Contact = () => {
@@ -21,10 +22,34 @@ const Contact = () => {
         });  
     };
 
+    const resetForm = () => {
+        setState({
+            name: "",
+            email: "",
+            subject: "",
+            message: ""
+          });
+    }
+
     const submitAction = e => {
         e.preventDefault();
+        axios({
+            method: "post", 
+            url:"https://nishantnextworld.com/api/mail/send-mail.php",           
+            data: state
+        }).then((response)=>{
+            console.log(response.data);
+            if (response.data.status === 'success') {
+              alert("Message Sent."); 
+              resetForm();
+            } else if(response.data.status === 'fail') {
+              alert("Message failed to send.")
+              document.getElementById('alert-message').innerHTML=response.data.error;
+            }
+        });
         alert(`Hi ${state.name} you'r email is ${state.email} and Message: ${state.message}`);
-      };
+    };
+
     return (
         <>
             <section id="contact" className="position-relative vh-100">
@@ -33,6 +58,7 @@ const Contact = () => {
                         <div className="title-section">
                             <h1 className="mb-md-5 mb-4 fw-bold text-sm-center">Want to get in touch?</h1>
                         </div>
+                        <span id="alert-message"></span>
                         <form id="contact-form" method="POST" onSubmit={submitAction}>
                             <div className="form-group my-3">
                                 <input 
