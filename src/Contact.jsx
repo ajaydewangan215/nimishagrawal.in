@@ -33,21 +33,22 @@ const Contact = () => {
 
     const submitAction = e => {
         e.preventDefault();
+        const formData = new FormData(e.target);
         axios({
             method: "post", 
-            url:"https://nishantnextworld.com/api/mail/send-mail.php",           
-            data: state
+            url:"https://nishantnextworld.com/api/mail/send-mail.php", 
+            headers: { 'Content-Type': 'multipart/form-data' },          
+            data: formData
         }).then((response)=>{
-            console.log(response.data);
             if (response.data.status === 'success') {
               alert("Message Sent."); 
               resetForm();
             } else if(response.data.status === 'fail') {
-              alert("Message failed to send.")
-              document.getElementById('alert-message').innerHTML=response.data.error;
+              alert("Message failed to send.");
+              document.getElementById('alert-message').innerHTML= response.data.error;
             }
         });
-        alert(`Hi ${state.name} you'r email is ${state.email} and Message: ${state.message}`);
+        // alert(`Hi ${state.name} you'r email is ${state.email} and Message: ${state.message}`);
     };
 
     return (
@@ -58,7 +59,7 @@ const Contact = () => {
                         <div className="title-section">
                             <h1 className="mb-md-5 mb-4 fw-bold text-sm-center">Want to get in touch?</h1>
                         </div>
-                        <span id="alert-message"></span>
+                        <span id="alert-message" className="text-danger"></span>
                         <form id="contact-form" method="POST" onSubmit={submitAction}>
                             <div className="form-group my-3">
                                 <input 
