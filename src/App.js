@@ -5,10 +5,10 @@ import { Route, Switch } from "react-router-dom";
 import Navbar from './Navbar';
 import Home from './Home';
 import Bio from './Bio';
-import Books from './Books';
-import Contact from './Contact';
+// import Books from './Books';
+// import Contact from './Contact';
 import Blog from './Blog';
-import Error from './Error';
+// import Error from './Error';
 import './App.css';
 
 function App() {
@@ -18,8 +18,8 @@ function App() {
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/bio" component={Bio}  />
-        <Route exact path="/books" component={Books}  />
-        <Route exact path="/contact" component={Contact} />
+        <Route exact path="/books" component={Blog}  />
+        <Route exact path="/contact" component={Blog} />
         <Route exact path="/blog" component={Blog} />
         <Route exact path="/gallary" component={Blog} />
         <Route component={Home} />

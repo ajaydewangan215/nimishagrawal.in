@@ -1,12 +1,12 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
     return (
         <>
-            <header id="header">
+            <header id="header" className="border-bottom">
                 <nav className="navbar navbar-expand-lg navbar-light bg-transparent">
                     <div className="container">
-                        <a className="navbar-brand fw-bold fst-italic fs-2" href="#">Nimish Agrawal</a>
+                        <a className="navbar-brand fw-bold fst-italic fs-2" href="/" onClick={e => e.preventDefault()}>Nimish Agrawal</a>
                         <button 
                             className="navbar-toggler" 
                             type="button" 
@@ -20,46 +20,52 @@ const Navbar = () => {
                         <div className="collapse navbar-collapse" id="navbarTogglerDemo03">
                             <ul className="navbar-nav ms-auto">
                                 <li className="nav-item">
-                                    <Link 
+                                    <NavLink exact 
                                         to="/" 
+                                        activeClassName="activeRoute"
                                         className="nav-link" 
                                         aria-current="page">Home
-                                    </Link>
+                                    </NavLink>
                                 </li>
                                 <li className="nav-item">
-                                    <Link 
+                                    <NavLink 
                                         to="/bio" 
+                                        activeClassName="activeRoute"
                                         className="nav-link" 
                                         aria-current="page">BIO
-                                    </Link>
+                                    </NavLink>
                                 </li>
                                 <li className="nav-item">
-                                    <Link 
+                                    <NavLink 
                                         to="/books" 
+                                        activeClassName="activeRoute"
                                         className="nav-link" 
                                         aria-current="page">Books
-                                    </Link>
+                                    </NavLink>
                                 </li>
                                 <li className="nav-item">
-                                    <Link 
+                                    <NavLink 
                                         to="/blog" 
+                                        activeClassName="activeRoute"
                                         className="nav-link" 
                                         aria-current="page">Blog
-                                    </Link>
+                                    </NavLink>
                                 </li>
                                 <li className="nav-item">
-                                    <Link 
+                                    <NavLink 
                                         to="/gallary" 
+                                        activeClassName="activeRoute"
                                         className="nav-link" 
                                         aria-current="page">Gallary
-                                    </Link>
+                                    </NavLink>
                                 </li>
                                 <li className="nav-item">
-                                    <Link 
+                                    <NavLink 
                                         to="/contact" 
+                                        activeClassName="activeRoute"
                                         className="nav-link" 
                                         aria-current="page">Contact Us
-                                    </Link>
+                                    </NavLink>
                                 </li>
                             </ul>
                         </div>
