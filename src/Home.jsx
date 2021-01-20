@@ -38,11 +38,6 @@ const Home = () => {
                             <img src={fb} alt="facebook" className="img-fluid" />
                         </a>
                     </li>
-                    {/* <li>
-                        <a href="#!" className="shadow-lg">
-                            <img src={twitter} alt="twitter" className="img-fluid" />
-                        </a>
-                    </li> */}
                     <li>
                         <a href="https://api.instagram.com/v1/users/ajay.dewangan.33821" target="_blank" rel="noreferrer" className="shadow-lg">
                             <img src={insta} alt="instagram" className="img-fluid" />

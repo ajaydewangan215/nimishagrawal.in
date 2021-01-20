@@ -7,3 +7,16 @@ body {
   -moz-osx-font-smoothing: grayscale;
   height: 100%;
 }
+
+/* placeholder */
+::-webkit-input-placeholder  { 
+	color: rgb(211, 207, 207); 
+  font-style: italic;
+  font-size: 85%;
+}
+input:-moz-placeholder,
+textarea:-moz-placeholder{ 
+	color: rgb(218, 214, 214);
+  font-style: italic;
+  font-size: 85%;
+} 

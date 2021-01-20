@@ -117,4 +117,8 @@
     #bio-content img {
         margin-top: 15%;
     }
+
+    #contact .contacts-main {
+        width: 100% !important;
+    }
 }
