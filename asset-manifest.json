@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/nimishagrawal.in/static/css/main.172b6d2e.chunk.css",
-    "main.js": "/nimishagrawal.in/static/js/main.2ba8425f.chunk.js",
-    "main.js.map": "/nimishagrawal.in/static/js/main.2ba8425f.chunk.js.map",
+    "main.js": "/nimishagrawal.in/static/js/main.4e2953f4.chunk.js",
+    "main.js.map": "/nimishagrawal.in/static/js/main.4e2953f4.chunk.js.map",
     "runtime-main.js": "/nimishagrawal.in/static/js/runtime-main.70fea381.js",
     "runtime-main.js.map": "/nimishagrawal.in/static/js/runtime-main.70fea381.js.map",
     "static/css/2.d65fdcc0.chunk.css": "/nimishagrawal.in/static/css/2.d65fdcc0.chunk.css",
@@ -23,6 +23,6 @@
     "static/css/2.d65fdcc0.chunk.css",
     "static/js/2.c0c4bdc0.chunk.js",
     "static/css/main.172b6d2e.chunk.css",
-    "static/js/main.2ba8425f.chunk.js"
+    "static/js/main.4e2953f4.chunk.js"
   ]
 }
