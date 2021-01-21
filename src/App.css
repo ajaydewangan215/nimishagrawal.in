@@ -16,6 +16,7 @@
     font-weight: 500; 
     transition: all 0.2s;
     color: #000000;
+    text-transform: uppercase;
 }
 
 #header .activeRoute{

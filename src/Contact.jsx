@@ -71,7 +71,7 @@ const Contact = () => {
                 <div className="container py-4 text-md-center text-lg-center">
                     <div className="contacts-main w-75 mx-auto px-md-5 px-lg-5">
                         <div className="title-section">
-                            <h1 className="mb-md-5 mb-4 fw-bold text-sm-center">Want to get in touch?</h1>
+                            <h1 className="mb-md-5 mb-4 fw-bold text-sm-center">Contact</h1>
                         </div>
                         <span id="alert-message" className="text-success fw-bold"></span>
                         <form id="contact-form" method="POST" onSubmit={submitAction}>
