@@ -39,7 +39,7 @@ const Home = () => {
                         </a>
                     </li>
                     <li>
-                        <a href="https://api.instagram.com/v1/users/ajay.dewangan.33821" target="_blank" rel="noreferrer" className="shadow-lg">
+                        <a href="https://api.instagram.com/v1/users/nimiagrawal2005/" target="_blank" rel="noreferrer" className="shadow-lg">
                             <img src={insta} alt="instagram" className="img-fluid" />
                         </a>
                     </li>
