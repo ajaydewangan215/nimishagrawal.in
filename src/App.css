@@ -45,7 +45,6 @@
     max-width: 700px;
 }
 
-
 #home-content .banner-info .banner-text {
     font-weight: 700;
     font-size: 52px;
@@ -82,10 +81,16 @@
 }
 
 #books-content{
-    background-image: url("./img/under.jpg");    
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  height:calc(100vh - 75px);
+}
+
+.book-block > a.btn{
+    position: absolute;
+    left: 15%;
+    bottom: 3%;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
 }
 
 @media only screen and (max-width:  575px){
@@ -115,11 +120,12 @@
         /* color: #673AB7; */
     }
 
-    #bio-content img {
-        margin-top: 15%;
-    }
-
     #contact .contacts-main {
         width: 100% !important;
+    }
+
+    .book-block > a.btn{
+        left: 11%;
+        padding: 6px 18px;
     }
 }

@@ -1,10 +1,11 @@
-import React from 'react';
-
+import Under from './img/under.jpg';
 const Blog = () => {
     return (
         <>
-            <section id="books-content" className="position-relative d-grid align-items-center vh-100">
-                
+            <section id="blog-content" className="">
+                <div className="book-block">
+                    <img src={Under} alt="Under" className="img-fluid"  />
+                </div>
             </section>
         </>
     );
