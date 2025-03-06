@@ -1,9 +1,6 @@
 import React from 'react';
-import whatsapp from './img/social-icon/whatsapp.webp';
-import fb from './img/social-icon/fb.webp';
-// import twitter from './img/social-icon/twitter.webp';
-import insta from './img/social-icon/insta.webp';
 // import Typewriter from 'typewriter-effect';
+import { socialData } from './data/data';
 
 const Home = () => {
     return (
@@ -27,23 +24,19 @@ const Home = () => {
                     <button type="button" className="btn btn-outline-light rounded-0 shadow-none me-2">My Work</button>
                     <button type="button" className="btn btn-outline-dark rounded-0 shadow-none">Contact Me</button>
                 </div>     */}
-                <ul className="social-icons list-inline position-absolute align-middle">
-                    <li>
-                        <a href="https://wa.me/919826156540?text=Hello" target="_blank" rel="noreferrer" className="shadow-lg">
-                            <img src={whatsapp} alt="whatsapp" className="img-fluid" />
-                        </a>
-                    </li>
-                    <li>
-                        <a href="http://www.facebook.com/nimish.agrawal.334" target="_blank" rel="noreferrer" className="shadow-lg">
-                            <img src={fb} alt="facebook" className="img-fluid" />
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://api.instagram.com/v1/users/nimiagrawal2005/" target="_blank" rel="noreferrer" className="shadow-lg">
-                            <img src={insta} alt="instagram" className="img-fluid" />
-                        </a>
-                    </li>
-                </ul>          
+                {
+                    socialData.length > 0 && (
+                        <ul className="social-icons list-inline position-absolute align-middle">
+                            {
+                                socialData.map(data => <li key={data.id}>
+                                    <a href={data.link} target="_blank" rel="noreferrer" className="shadow-lg">
+                                        <img src={data.icon} alt={data.name} className="img-fluid" />
+                                    </a>
+                                </li>)
+                            }
+                        </ul>
+                    )
+                }
             </section>
         </>
     );

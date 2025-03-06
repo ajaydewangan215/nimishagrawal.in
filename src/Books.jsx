@@ -1,19 +1,23 @@
 import { Link } from "react-router-dom"
-import Book1 from './img/books/book1.jpg'
+import { booklist } from './data/data';
 
 const Books = () => {
     return (
         <>
             <section id="books-content" className="position-relative">
-                <div className="book-block position-relative">
-                    <img src={Book1} alt="book1" className="img-fluid" />
-                    <Link 
-                        to={{ pathname: "https://www.amazon.in/dp/8195128696" }} 
-                        className="btn btn-warning btn-round m-1 rounded-pill" 
-                        target="_blank">
-                        Buy Now
-                    </Link>
-                </div>
+                {
+                    booklist.length > 0 && booklist.slice(0).reverse().map(book => (
+                        <div className="book-block position-relative">
+                            <img src={book.image} alt={book.name} className="img-fluid" />
+                            <Link 
+                                to={{ pathname: book.buylink }} 
+                                className="btn btn-warning btn-round m-1 rounded-pill" 
+                                target="_blank">
+                                Buy Now
+                            </Link>
+                        </div>
+                    ))
+                }
                 <div className="h-100 d-flex align-items-center justify-content-center d-none">
                     <div className="container">
                         <div className="row">

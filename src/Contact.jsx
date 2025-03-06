@@ -43,7 +43,7 @@ const Contact = () => {
         const formData = new FormData(e.target);
         axios({
             method: "post", 
-            url:"https://nishantnextworld.com/api/mail/send-mail.php", 
+            url: "api/contact/send-mail.php", 
             headers: { 'Content-Type': 'multipart/form-data' },          
             data: formData
         }).then((response)=>{
