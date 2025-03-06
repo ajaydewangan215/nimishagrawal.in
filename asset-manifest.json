@@ -1,19 +1,20 @@
 {
   "files": {
     "main.css": "/nimishagrawal.in/static/css/main.ab71c1ab.chunk.css",
-    "main.js": "/nimishagrawal.in/static/js/main.7f163a36.chunk.js",
-    "main.js.map": "/nimishagrawal.in/static/js/main.7f163a36.chunk.js.map",
-    "runtime-main.js": "/nimishagrawal.in/static/js/runtime-main.70fea381.js",
-    "runtime-main.js.map": "/nimishagrawal.in/static/js/runtime-main.70fea381.js.map",
+    "main.js": "/nimishagrawal.in/static/js/main.29fa6305.chunk.js",
+    "main.js.map": "/nimishagrawal.in/static/js/main.29fa6305.chunk.js.map",
+    "runtime-main.js": "/nimishagrawal.in/static/js/runtime-main.60cd4b92.js",
+    "runtime-main.js.map": "/nimishagrawal.in/static/js/runtime-main.60cd4b92.js.map",
     "static/css/2.d65fdcc0.chunk.css": "/nimishagrawal.in/static/css/2.d65fdcc0.chunk.css",
-    "static/js/2.f9d68efa.chunk.js": "/nimishagrawal.in/static/js/2.f9d68efa.chunk.js",
-    "static/js/2.f9d68efa.chunk.js.map": "/nimishagrawal.in/static/js/2.f9d68efa.chunk.js.map",
+    "static/js/2.024a65b5.chunk.js": "/nimishagrawal.in/static/js/2.024a65b5.chunk.js",
+    "static/js/2.024a65b5.chunk.js.map": "/nimishagrawal.in/static/js/2.024a65b5.chunk.js.map",
     "index.html": "/nimishagrawal.in/index.html",
     "static/css/2.d65fdcc0.chunk.css.map": "/nimishagrawal.in/static/css/2.d65fdcc0.chunk.css.map",
     "static/css/main.ab71c1ab.chunk.css.map": "/nimishagrawal.in/static/css/main.ab71c1ab.chunk.css.map",
-    "static/js/2.f9d68efa.chunk.js.LICENSE.txt": "/nimishagrawal.in/static/js/2.f9d68efa.chunk.js.LICENSE.txt",
+    "static/js/2.024a65b5.chunk.js.LICENSE.txt": "/nimishagrawal.in/static/js/2.024a65b5.chunk.js.LICENSE.txt",
     "static/media/bio.a8e7f850.jpg": "/nimishagrawal.in/static/media/bio.a8e7f850.jpg",
-    "static/media/book1.b9c08fef.jpg": "/nimishagrawal.in/static/media/book1.b9c08fef.jpg",
+    "static/media/book-1.b9c08fef.jpg": "/nimishagrawal.in/static/media/book-1.b9c08fef.jpg",
+    "static/media/book-2.c8ad4d08.jpg": "/nimishagrawal.in/static/media/book-2.c8ad4d08.jpg",
     "static/media/fb.776fc3f2.webp": "/nimishagrawal.in/static/media/fb.776fc3f2.webp",
     "static/media/App.css": "/nimishagrawal.in/static/media/front.c8bd22de.jpg",
     "static/media/insta.6b88b90f.webp": "/nimishagrawal.in/static/media/insta.6b88b90f.webp",
@@ -21,10 +22,10 @@
     "static/media/whatsapp.5b259539.webp": "/nimishagrawal.in/static/media/whatsapp.5b259539.webp"
   },
   "entrypoints": [
-    "static/js/runtime-main.70fea381.js",
+    "static/js/runtime-main.60cd4b92.js",
     "static/css/2.d65fdcc0.chunk.css",
-    "static/js/2.f9d68efa.chunk.js",
+    "static/js/2.024a65b5.chunk.js",
     "static/css/main.ab71c1ab.chunk.css",
-    "static/js/main.7f163a36.chunk.js"
+    "static/js/main.29fa6305.chunk.js"
   ]
 }
