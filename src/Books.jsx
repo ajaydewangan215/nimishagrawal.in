@@ -11,7 +11,7 @@ const Books = () => {
                             <img src={book.image} alt={book.name} className="img-fluid" />
                             <Link 
                                 to={{ pathname: book.buylink }} 
-                                className="btn btn-warning btn-round m-1 rounded-pill" 
+                                className="btn btn-primary btn-round m-1 rounded-pill" 
                                 target="_blank">
                                 Buy Now
                             </Link>

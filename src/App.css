@@ -86,8 +86,8 @@
 
 .book-block > a.btn{
     position: absolute;
-    left: 15%;
-    bottom: 3%;
+    right: 10%;
+    bottom: 10%;
     padding: 12px 24px;
     border: none;
     cursor: pointer;
@@ -125,7 +125,8 @@
     }
 
     .book-block > a.btn{
-        left: 11%;
-        padding: 6px 18px;
+        right: 0;
+        bottom: 0;
+        padding: 4px 13px;
     }
 }
